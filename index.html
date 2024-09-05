@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+
+   
+
+    <section id="about" class="animated-section from-left">
+        <h2>About Me</h2>
+        <img src="your-image.jpg" alt="Your Name" class="profile-img">
+        <p>Hi, I'm Olatunde Jeremiah, a passionate front-end developer, graphic designer, and the CEO of NextWave Digital. I love creating beautiful and functional websites that make a difference.</p>
+        <p>With 1 year of experience in the tech industry, I've honed my skills in HTML, CSS, and JavaScript, as well as graphic design. My mission is to deliver creative and effective solutions that align with the goals and visions of my clients.</p>
+    </section>
+
+    <section id="projects" class="animated-section from-right">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <h3>Project 1: Responsive Website Design</h3>
+            <p>This project involved creating a fully responsive website for a local business, ensuring seamless functionality across all devices.</p>
+            <a href="https://jcreativ.github.io/Nextwave-Digitals-/">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 2: Fitness Website</h3>
+            <p>A fitness website designed to enhance user experience with smooth navigation and a visually appealing interface..</p>
+            <a href="https://jcreativ.github.io/Fitness.com/">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 3: A Calculator</h3>
+            <p>I developed a complete calculator concept, including its functionality, user interface, and promotional materials..</p>
+            <a href="https://jcreativ.github.io/Casio_Calculator/">View Project</a>
+        </div>
+        
+    </section>
+
+    <section id="skills" class="animated-section from-left">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Graphic Design</li>
+            <li>Responsive Web Design</li>
+            <li>UI/UX Design</li>
+            <li>Version Control (Git)</li>
+            <li>Project Management</li>
+        </ul>
+    </section>
+
+    <section id="experience" class="animated-section from-right">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Senior Web Developer and CEO of NextWave Digitals</h3>
+            <p>Led a team of developers in creating high-performance web applications, ensuring the best practices in code quality and efficiency.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Graphic Designer at Nextwave Digitals</h3>
+            <p>Collaborated with marketing teams to design visually compelling graphics for various media platforms.</p>
+        </div>
+      
+    </section>
+
+    <section id="services" class="animated-section from-left">
+        <h2>Services</h2>
+        <p>I offer a wide range of services to meet your web development and graphic design needs, including:</p>
+        <ul>
+            <li>Website Design & Development</li>
+            <li>Graphic Design & Branding</li>
+            <li>UI/UX Consulting</li>
+            <li>E-commerce Solutions</li>
+            <li>Responsive & Mobile-First Design</li>
+        </ul>
+    </section>
+
+    <section id="testimonials" class="animated-section from-right">
+        <h2>Testimonials</h2>
+        <div class="testimonial-item">
+            <p>"Olatunde Jeremiah did an outstanding job on our website redesign. The new site is clean, modern, and easy to navigate. Highly recommend!"</p>
+            <h4>- Mark Thompson, Marketing Director, Future Tech Solutions</h4>
+        </div>
+        <div class="testimonial-item">
+            <p>"We loved working with [Your Name] on our branding project. Their creativity and attention to detail really set them apart."</p>
+            <h4>- Samantha Lee, Founder, Startup Hub</h4>
+        </div>
+       
+    </section>
+
+<section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <form id="contact-form" action="send_email.php" method="POST" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <input type="file" id="file-upload" class="attach-file">
+<label for="file-upload" class="attach-label">Attach File</label>
+        
+      <button type="submit" style="font-size: 30px;">Send</button>
+      <br>
+      <div class="line-or">
+  <span>or</span>
+</div>
+    <br>
+         <p><strong><i>Click to Connect with Me:</i></strong></p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/olatunde-jeremiah-51b364270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="linkedin.jpg" alt="LinkedIn" width="72px" />
+            </a>
+            <a href="https://www.instagram.com/ceo_nextwave_digitals?igsh=dDhmOHZ2bWcyZGFw" target="_blank">
+                <img src="Instagram.jpg" alt="Instagram" width="80px" />
+            </a>
+            <a href="https://www.threads.net/@ceo_nextwave_digitals?invite=1" target="_blank">
+                <img src="thread.jpg" alt="Threads"  width="77px"/>
+            </a>
+        </div>
+</section>
+
+    <footer>
+        <p>&copy; 2024 Olatunde Jeremiah. All rights reserved.</p>
+       
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
