@@ -91,3 +91,47 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => {
     observer.observe(section);
 });
+
+
+
+
+
+
+
+// Function to handle the fading effect on scroll
+function handleScroll() {
+    const sections = document.querySelectorAll('section');
+    const windowHeight = window.innerHeight;
+
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+
+        if (sectionTop <= windowHeight * 0.75 && sectionTop >= windowHeight * -0.25) {
+            section.classList.add('fade-in');
+            section.classList.remove('fade-out');
+        } else {
+            section.classList.remove('fade-in');
+            section.classList.add('fade-out');
+        }
+    });
+}
+
+// Apply fading effect when the page is scrolled
+window.addEventListener('scroll', handleScroll);
+
+// Smooth scrolling and fade-in when links are clicked
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetSection = document.querySelector(this.getAttribute('href'));
+        targetSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+
+        // Trigger the fade-in effect immediately
+        setTimeout(() => {
+            targetSection.classList.add('fade-in');
+        }, 500); // Adjust the delay if needed
+    });
+});
