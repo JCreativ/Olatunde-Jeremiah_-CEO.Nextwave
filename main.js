@@ -65,3 +65,29 @@ document.getElementById('send-message').addEventListener('click', () => {
         alert('Please type a message before sending.'); 
     }
 });
+
+
+
+
+
+
+const sections = document.querySelectorAll('section');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            entry.target.classList.remove('fade-out');
+        } else {
+            entry.target.classList.remove('fade-in');
+            entry.target.classList.add('fade-out');
+        }
+    });
+}, {
+    threshold: 0.1 // Trigger when 10% of the section is visible
+});
+
+// Apply the observer to each section
+sections.forEach(section => {
+    observer.observe(section);
+});
