@@ -590,3 +590,23 @@ section {
 .fade-out {
     opacity: 0;
 }
+
+
+
+
+
+section {
+    opacity: 0; /* Sections start invisible */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for fade in/out */
+    visibility: hidden; /* Hidden by default */
+}
+
+section.fade-in {
+    opacity: 1; /* Fully visible when scrolled into view */
+    visibility: visible;
+}
+
+section.fade-out {
+    opacity: 0; /* Fade out when out of view */
+    visibility: hidden;
+}
